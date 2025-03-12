@@ -20,3 +20,9 @@ jobs:
           sleep 5
           pwd
           
+  checks_needed:
+    needs: [welcome_script]
+    runs-on: ubuntu_latest
+    steps:
+      - name: Welcome IT world
+        run: echo "Hello IT world"
