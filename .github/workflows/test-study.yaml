@@ -6,7 +6,6 @@ on:
       - main
 
 
-
 jobs:
   welcome_script:
     runs-on: ubuntu_latest
