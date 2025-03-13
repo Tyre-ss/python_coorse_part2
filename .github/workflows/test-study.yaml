@@ -8,7 +8,7 @@ on:
 
 jobs:
   welcome_script:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps:
       - name: Welcome IT world
         run: echo "Hello IT world"
@@ -21,7 +21,7 @@ jobs:
           
   checks_needed:
     needs: [welcome_script]
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps:
       - name: Welcome IT world
         run: echo "Hello IT world"
