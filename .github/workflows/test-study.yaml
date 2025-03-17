@@ -1,0 +1,27 @@
+name: first CI/CD
+
+on:
+  pull_request:
+    branches:
+      - main
+
+
+jobs:
+  welcome_script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome IT world
+        run: echo "Hello IT world"
+      - name: Get info
+        run: |
+          echo "Getting comp info"
+          whoami
+          sleep 5
+          pwd
+          
+  checks_needed:
+    needs: [welcome_script]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome IT world
+        run: echo "Hello IT world"
