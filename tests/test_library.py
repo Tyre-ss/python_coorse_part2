@@ -1,6 +1,7 @@
-class TestLib:
-    def test_new_lib(self, lib):
-        assert lib.name
-        assert lib.passive == 0
-        assert lib.active == 0
-        assert not lib.accounts
+class TestLibrary:
+    def test_new_library(self, library):
+        assert library.total == 5
+        assert library.name
+        assert library.passive == 0
+        assert library.active == 5
+        assert not library.readers
