@@ -14,6 +14,10 @@ def another_book() -> Book:
     Widpochinok = Book("Harry_Potter", "im ai")
     return Widpochinok
 
+@pytest.fixture()
+def another_another_book() -> Book:
+    AAAAAAAAAA = Book('AAAAAAAAA','Im')
+
 
 @pytest.fixture()
 def library():
@@ -25,3 +29,6 @@ def library():
 def library2():
     Lib = Library("I_know")
     return Lib
+
+def library3():
+    Lib = Library('My teacher')
