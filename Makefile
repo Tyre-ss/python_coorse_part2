@@ -1,4 +1,8 @@
-PHONY: check
+PHONY: test
+test:
+    @echo = 'tests started...'
+    @set = PYTHONPATH=. &&pytest -m pytest -v
+
 check:
 	echo '1234'
 	black .
